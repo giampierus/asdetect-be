@@ -1,0 +1,468 @@
+[
+  {
+    "feature" : "Circostanzialità",
+    "descrizione": "Il pensiero è eccessivamente dettagliato, con l'argomento principale che viene perso nella descrizione di dettagli insignificanti. La discussione diventa più prolissa e il paziente tende a riprendere dettagli non rilevanti, rendendo difficile comprendere il punto principale.",
+    "esempio": [
+      "Domanda: È stato facile arrivare qui?\nRisposta: Sì, prima siamo andati in treno, ma poi c'era un sacco di gente, il controllore era un tipo strano, poi siamo passati per un'altra stazione e c'era tanto rumore. Comunque, la cosa più importante era che non c'erano posti a sedere, quindi ho dovuto stare in piedi tutto il viaggio."
+    ],
+    "punteggio": {
+      "0": "Non presente: La risposta è breve e concisa, senza divagazioni.",
+      "1": "Dubbio: La risposta inizia a divagare leggermente, ma la connessione con la domanda è ancora evidente.",
+      "2": "Lieve: Il paziente divaga per qualche frase, ma la domanda principale viene ancora trattata.",
+      "3": "Moderata: La risposta perde di vista il punto principale per diverse frasi, con il paziente che si sofferma su dettagli non rilevanti.",
+      "4": "Grave: Il punto principale della domanda è quasi completamente perso e il paziente si concentra su dettagli irrilevanti."
+    }
+  },
+   {
+    "feature" : "Deragliamento",
+    "descrizione": "Il paziente inizia con un argomento e poi si sposta rapidamente verso altre idee che non sono collegabili in modo chiaro. Le transizioni tra le idee sembrano casuali e le risposte possono sembrare confuse, senza una connessione logica evidente tra di esse.",
+    "esempio": [
+      "Intervistatore: Ti è piaciuto farlo?\nPaziente: Mm-hm. Oh, beh, io, io, oh, mi sono piaciute alcune comunità che ho provato, e il giorno dopo quando stavo uscendo, sai, eh, ho preso il controllo, tipo, eh, ho messo, um, la candeggina nei miei capelli in California. La mia compagna di stanza era di Chicago e andava al college. E vivevamo nella Y.W.C.A., quindi lei voleva mettermi, um, il perossido sui capelli, e l'ha fatto, e mi sono alzato e mi sono guardato nello specchio e mi sono venuti le lacrime agli occhi. Ora capisci, ero pienamente consapevole di cosa stava succedendo, ma perché non riuscivo a capire perché, perché le lacrime? Non lo capisco, puoi?\nIntervistatore: No.\nPaziente: Hai mai vissuto qualcosa del genere?\nIntervistatore: Devi essere una persona emotiva, tutto qui.\nPaziente: Beh, non molto, voglio dire, e se fossi morto? È l'età dei funerali. Beh, io, um? Ora avevo le unghie dei piedi, eh, operate. Sono, eh, infettate e non riuscivo a farlo ma non mi lasciavano fare con i miei attrezzi. Beh."
+    ],
+    "punteggio": {
+      "0": "Non presente: La risposta è chiara e focalizzata sul punto.",
+      "1": "Dubbio: Le connessioni tra le frasi sono ancora ovvie. In generale, i pensieri sono ancora legati a ciò che è stato detto prima.",
+      "2": "Moderata: Le connessioni tra le frasi sono vaghe, ma i pensieri sono ancora correlati al tema principale.",
+      "3": "Grave: Le frasi non sono più collegate tra loro in modo chiaro, si passa da un pensiero all'altro senza una logica evidente.",
+      "4": "Estrema: L'intervista diventa incomprensibile, con un flusso di idee che non ha alcuna relazione significativa tra di esse."
+    }
+  },
+   {
+    "feature" : "Tangenzialità",
+    "descrizione": "Le idee non seguono un percorso lineare. Durante passaggi più lunghi del discorso, il paziente inizia a divagare lontano dall'argomento principale, senza riuscire a tornare al tema iniziale.",
+    "esempio": [
+      "Intervistatore: Da quale città vieni?\nPaziente: Beh, è una domanda difficile a cui rispondere. Sono nato a Marburg, ma i miei genitori si sono incontrati a Colonia. Era un periodo difficile, hanno dovuto affrontare molte difficoltà finanziarie. Era durante la guerra e abbiamo dovuto fuggire dalla città…"
+    ],
+    "punteggio": {
+      "0": "Non presente: La risposta è concisa e rimane sull'argomento.",
+      "1": "Dubbio: La risposta inizia a divagare lentamente, ma il tema iniziale è ancora presente.",
+      "2": "Lieve: Il paziente si allontana lentamente dal tema iniziale, e in alcune occasioni non ritorna.",
+      "3": "Moderata: Il paziente si discosta rapidamente dal tema iniziale e occasionalmente non torna.",
+      "4": "Grave: Il paziente si discosta immediatamente dal tema iniziale e non ritorna mai."
+    }
+  },
+   {
+    "feature" : "Dissociazione del pensiero",
+    "descrizione": "Il contenuto delle frasi è incoerente e manca di una connessione logica. Le idee non seguono un flusso coerente, e il paziente potrebbe fare affermazioni che non sono in relazione con ciò che è stato detto prima.",
+    "esempio": [
+      "Probabilmente hai sentito che pelano il cervello... Qualcuno cercherà di fermarmi l'Armageddon... vento del cielo e meteo e che la gente cambierà il suo umore. Questo lo chiamo segmentazione. Anche il vento della casa, la segmentazione dell'energia... Dico l'omicidio, avrei dovuto produrre l'ipnosi."
+    ],
+    "punteggio": {
+      "0": "Non presente: La risposta è coerente e ogni frase ha un senso chiaro.",
+      "1": "Dubbio: Le frasi sono ancora coerenti tra loro, ma le connessioni tra le idee sono vaghe.",
+      "2": "Incoerenza: Le frasi hanno ancora senso individualmente, ma manca la coerenza tra di esse.",
+      "3": "Discorso frammentato: Le frasi sono solo parzialmente correlate tra loro, senza un flusso logico chiaro.",
+      "4": "Discorso sparso: Le frasi sono incoerenti, non si riesce a trovare un legame significativo tra di esse."
+    }
+  },
+   {
+    "feature" : "Diafonia",
+    "descrizione": "La risposta del paziente manca del punto in questione, anche se il paziente ha capito la domanda. Questo fenomeno non dipende dalla correttezza della risposta, ma dal fatto che il paziente si discosta dalla domanda.",
+    "esempio": [
+      "Perché sei venuto nel reparto psichiatrico?\nMio fratello ha subito un intervento chirurgico all'appendice."
+    ],
+    "punteggio": {
+      "0": "Non presente: La risposta è pertinente e risponde direttamente alla domanda.",
+      "1": "Dubbio: La risposta si discosta leggermente dalla domanda, ma resta comprensibile.",
+      "2": "Lieve: Il Crosstalk si verifica più volte durante l'esplorazione, ma non impedisce la comprensione generale.",
+      "3": "Moderata: Il Crosstalk si verifica occasionalmente e ostacola l'esplorazione, creando confusione.",
+      "4": "Grave: Il Crosstalk è frequente e ostacola notevolmente l'esplorazione, rendendo difficile seguire il discorso."
+    }
+  },
+   { 
+    "feature": "Perseveranza",
+    "descrizione": "Il paziente si aggrappa a idee e argomenti precedentemente discussi che non sono più rilevanti per il contesto attuale, ripetendo informazioni senza adattarle alla conversazione in corso.",
+    "esempio": [
+      "Un paziente ripete determinate frasi o concetti anche quando si discute di argomenti completamente diversi."
+    ],
+    "punteggio": {
+      "0": "Non presente: Non ci sono ripetizioni o ritorni su argomenti precedenti.",
+      "1": "Dubbio: Occasionalmente il paziente ripete alcune frasi, ma la discussione non è ostacolata.",
+      "2": "Lieve: Le perseverazioni sono moderate, ma non interferiscono significativamente con la conversazione.",
+      "3": "Moderata: Le perseverazioni interferiscono con l'esplorazione, ma la conversazione può comunque proseguire.",
+      "4": "Grave: Le perseverazioni sono così frequenti che l'esplorazione è ostacolata, rendendo difficile la comunicazione."
+    }
+  },
+  {
+    "feature": "Verbigerazione",
+    "descrizione": "Ripetizione inutile di una singola parola.",
+    "esempio": [
+      "Sono un filosofo, filosofo, sono un filosofo, che ha composto grande letteratura. Ho una vocazione per questo lavoro, una vocazione, vocazione. Non devi credermi, credimi, non credere, non credere. Non mi interessa, interessa, interessa, interessa."
+    ],
+    "punteggio": {
+      "0": "Non presente",
+      "1": "Dubbio",
+      "2": "Lieve: La verbigerazione si verifica più volte durante l'intervista.",
+      "3": "Moderata: La verbigerazione si verifica occasionalmente e complica la comunicazione.",
+      "4": "Grave: Ripetizione stereotipata persistente di parole singole e sillabe. Di conseguenza, l'esplorazione è notevolmente ostacolata."
+    }
+  },
+   {
+    "feature": "Rottura del pensiero",
+    "descrizione": "Interruzione improvvisa e oggettivamente osservabile di un flusso di pensiero precedentemente fluido. Il fenomeno può verificarsi nel mezzo di una frase senza apparente motivo.",
+    "esempio": [
+      "Il paziente dice: Mi sento bene. Il mio umore è molto migliorato perché... (pausa).",
+      "Domande: Hai smesso improvvisamente di parlare. Qual è stato il motivo di questa interruzione?",
+      "Il paziente spiega che ha improvvisamente perso il filo del pensiero."
+    ],
+    "punteggio": {
+      "0": "Non presente",
+      "1": "Dubbio",
+      "2": "Lieve: la comunicazione è appena influenzata.",
+      "3": "Moderata: la comunicazione è moderatamente influenzata.",
+      "4": "Grave: la comunicazione è sostanzialmente influenzata."
+    }
+  },
+   {
+    "feature": "Discorso sotto pressione",
+    "descrizione": "La velocità di produzione del linguaggio è aumentata.",
+    "punteggio": {
+      "0": "Non presente",
+      "1": "Dubbio",
+      "2": "Lieve: la velocità di produzione del discorso è aumentata.",
+      "3": "Moderata: la velocità di produzione del discorso è notevolmente aumentata.",
+      "4": "Grave: la velocità di produzione del discorso è estremamente aumentata."
+    }
+  },
+  {
+    "feature": "Logorrea",
+    "descrizione": "Un impulso eccessivo a parlare. Il discorso logorrea può essere coerente e logico. Non è necessario che ci sia una produzione accelerata del linguaggio. La comunicazione con il paziente è ostacolata. Il paziente non riesce a riconoscere quando viene interrotto o semplicemente ignora tali interruzioni.",
+    "esempio": [
+      "Qual è la tua professione attuale?",
+      "In realtà, sono un elettricista, ma negli ultimi anni ho fatto vari lavori attraverso l'agenzia di lavoro temporaneo. Lavori in fabbrica, lavori edili e così via. Ma presto voglio lavorare come elettricista, perché guadagni più soldi e non devi stare lontano da casa così spesso. Questo è importante per me..."
+    ],
+    "punteggio": {
+      "0": "Non presente",
+      "1": "Dubbio",
+      "2": "Lieve: È possibile interrompere il flusso di parole. Con alcune eccezioni, il paziente riesce a concentrarsi sull'esaminatore.",
+      "3": "Moderata: È difficile interrompere il flusso di parole. Il paziente non riesce a concentrarsi sull'esaminatore.",
+      "4": "Grave: La comunicazione con il paziente è notevolmente ostacolata. I tentativi di interrompere il paziente non vengono notati o vengono deliberatamente ignorati."
+    }
+  },
+   {
+    "feature": "Discorso manieristico",
+    "descrizione": "Per l'osservatore, il discorso (scelta delle parole, struttura delle frasi, articolazione o prosodia) sembra influenzato e ornato, eccentrico, innaturale, pomposo, esagerato, elaborato o stilizzato.",
+    "esempio": [
+      "Potresti dirmi cosa hai fatto lo scorso fine settimana?",
+      "Ma certamente, signora. In primo luogo, mi sono recato al negozio di alimentari, poiché l'acquisizione di beni commestibili sembrava essere necessaria. Tuttavia, questo sforzo si è rivelato infruttuoso dal mio punto di vista, poiché gli orari di apertura si sono purtroppo rivelati un ostacolo per il mio acquisto previsto."
+    ],
+    "punteggio": {
+      "0": "Non presente",
+      "1": "Dubbio",
+      "2": "Lieve: L'uso del discorso è manieristico più volte.",
+      "3": "Moderata: L'uso del discorso è manieristico occasionalmente.",
+      "4": "Grave: A causa del discorso manieristico, il paziente è difficile da comprendere."
+    }
+  },
+   {
+    "feature": "Parafasia semantica",
+    "descrizione": "Sostituzione di una parola inappropriata (la parola è semanticamente correlata alla parola corretta). Il parlante può o meno riconoscere il suo errore e cercare di correggerlo.",
+    "esempio": [
+      "Vorrei una giacca per la pioggia, una giacca... scusate, intendo un cappotto..."
+    ],
+    "punteggio": {
+      "0": "Non presente",
+      "1": "Dubbio: Alcune volte il paziente usa una parola che è inappropriata ma comprensibile nel contesto (ad esempio, 'giacca' per 'cappotto').",
+      "2": "Lieve: Il paziente usa parole inappropriate più volte. La distanza semantica dalla parola appropriata è maggiore (ad esempio, 'salsiccia' invece di 'formaggio', 'nonno' invece di 'uomo').",
+      "3": "Moderata: Il paziente usa parole inappropriate occasionalmente. In alcuni casi la distanza semantica dalla parola desiderata è così grande che la connessione è difficilmente riconoscibile (ad esempio, 'allenamento' invece di 'esercizio'), tanto che il significato inteso non è chiaro.",
+      "4": "Grave: Il paziente usa frequentemente parole inappropriate. Di conseguenza, l'esplorazione è notevolmente ostacolata (ad esempio, 'fiore' invece di 'acquario', 'panna' invece di 'tigre')."
+    }
+  },
+  {
+    "feature": "Parafasia fonetica",
+    "descrizione": "Errore di pronuncia (rispetto all'articolazione fonetica) di una parola. Le forme più lievi possono manifestarsi come 'scivoloni della lingua' nel discorso quotidiano. Il parlante di solito riconosce l'errore e può tentare di correggerlo.",
+    "esempio": [
+      "Durante l'intervista il paziente dice 'manana' invece di 'banana'."
+    ],
+    "punteggio": {
+      "0": "Non presente",
+      "1": "Dubbio: Alcune volte il paziente fa errori di pronuncia, ma non influiscono troppo sulla comunicazione.",
+      "2": "Lieve: Il paziente fa errori di pronuncia diverse volte durante l'intervista.",
+      "3": "Moderata: Il paziente usa Parafasie Fonetiche occasionalmente, ma la comunicazione è ancora comprensibile.",
+      "4": "Grave: Il paziente usa frequentemente Parafasie Fonetiche, ostacolando notevolmente l'esplorazione."
+    }
+  },
+   {
+    "feature": "Neologismi",
+    "descrizione": "Formazioni di nuove parole che non corrispondono alle convenzioni lessicali. La maggior parte dei Neologismi non sono direttamente intelligibili. Nei casi estremi può essere creato o utilizzato un linguaggio artificiale.",
+    "esempio": [
+      "Ak mersku na armabs voligent"
+    ],
+    "punteggio": {
+      "0": "Non presente",
+      "1": "Dubbio: Un Neologismo sicuramente si verifica durante l'intervista.",
+      "2": "Lieve: Si verificano diversi Neologismi durante l'intervista.",
+      "3": "Moderata: La comunicazione con il paziente è ostacolata da Neologismi, ma l'esplorazione non è significativamente limitata.",
+      "4": "Grave: La comunicazione con il paziente è notevolmente ostacolata, nei casi estremi può essere presente la criptolalia (glossolalia, simbolismo privato)."
+    }
+  },
+   {
+    "feature": "Clandore-squillio",
+    "descrizione": "Un modello di linguaggio in cui i suoni, piuttosto che le relazioni significative, governano la scelta delle parole, tanto da compromettere l'intelligibilità del linguaggio e introdurre parole ridondanti. Oltre alle relazioni in rima, questo modello di linguaggio può includere associazioni puns, dove una parola simile in suono (polisemiche/omofonie) introduce un nuovo pensiero.",
+    "esempio": [
+      "Non sto cercando di fare rumore. Sto cercando di dare un senso. Se riesci a trovare un senso nel nonsenso, divertiti. Sto cercando di dare un senso al senso. Non sto più facendo senso [centesimi]. Devo fare dollari."
+    ],
+    "punteggio": {
+      "0": "Non presente",
+      "1": "Dubbio: Il Clanging si verifica raramente durante l'intervista.",
+      "2": "Lieve: Il Clanging si verifica più volte durante l'intervista.",
+      "3": "Moderata: Il Clanging si verifica occasionalmente, ma l'esplorazione non è significativamente limitata.",
+      "4": "Grave: Il Clanging si verifica frequentemente e domina ampiamente la conversazione, ostacolando notevolmente l'esplorazione."
+    }
+  },
+  {
+    "feature": "Ecolalia",
+    "descrizione": "Ripetizioni senza senso di parole e frasi senza riguardo per i loro significati e funzioni semantiche. Il paziente ripete le parole o frasi dell'intervistatore.",
+    "esempio": [
+      "Vorrei parlare con te per qualche minuto.",
+      "Minuti, minuti, minuti, parlare con te per qualche minuto."
+    ],
+    "punteggio": {
+      "0": "Non presente",
+      "1": "Dubbio: Il paziente ripete occasionalmente singole parole o frasi, ma poi risponde correttamente.",
+      "2": "Lieve: Più volte il paziente ripete parole singole o parti della domanda precedente, ma poi risponde correttamente.",
+      "3": "Moderata: Il paziente ripete occasionalmente singole parole o parti della domanda precedente, ma risponde generalmente.",
+      "4": "Grave: Il paziente ripete frequentemente singole parole o parti della domanda precedente senza fornire ulteriori informazioni."
+    }
+  },
+   {
+    "feature": "Povertà del contenuto del discorso",
+    "descrizione": "Anche se le risposte sono abbastanza lunghe, il discorso non fornisce molte informazioni. Il linguaggio tende ad essere vago, spesso eccessivamente astratto o eccessivamente concreto, ripetitivo e stereotipato.",
+    "esempio": [
+      "Intervistatore: Perché pensi che le persone credano in Dio?",
+      "Paziente: Beh, prima di tutto. Come tutti sappiamo, e come è sempre stato, lui è una forza spirituale, una forza religiosa di particolare potenza, un messaggio personale, che è qui ora. Lui parla con me e cammina con me. E, ah, la comprensione che ho, ah, molte persone, non sanno davvero chi è Dio. Perché, ah, quello che voglio dire è che non sanno davvero di cosa si tratti. Molti di loro non capiscono che lui cammina con loro e parla con loro."
+    ],
+    "punteggio": {
+      "0": "Non presente",
+      "1": "Dubbio: Le risposte sono vaghe o potrebbero essere abbreviate.",
+      "2": "Lieve: Più volte, le risposte sono vaghe o potrebbero essere abbreviate.",
+      "3": "Moderata: Occasionalmente, le risposte sono vaghe o forniscono poche informazioni.",
+      "4": "Grave: La maggior parte dell'intervista è vaga, priva di contenuto o potrebbe essere sostanzialmente abbreviata."
+    }
+  },
+   {
+    "feature": "Pensiero ristretto",
+    "descrizione": "Restrizione nella gamma di contenuti, adesione a un solo argomento o a pochi argomenti, o fissazione su alcune idee principali. Durante la conversazione, il paziente ha difficoltà a passare da un argomento all'altro o torna costantemente all'argomento iniziale. È necessario che l'esaminatore offra al paziente una varietà di argomenti per una buona esplorazione.",
+    "esempio": [
+      "Come descriverebbe il suo umore in questo momento?",
+      "Al momento mi sento meglio, ma questa mattina avevo un mal di schiena terribile. È cominciato quando mi sono separato da mio marito. Faccio fatica a dormire e non mi muovo molto durante il giorno.",
+      "È diventato più difficile concentrarsi su attività piacevoli nell'ultimo mese?",
+      "Se non avessi questo mal di schiena tutto il giorno, forse riuscirei a pensare ad altre cose molto più spesso.",
+      "Quali hobby e attività ti piacciono?",
+      "Un tempo praticavo molto sport con mio ex-marito. Da quando ci siamo separati non mi piacciono più e ho sempre questo terribile mal di schiena."
+    ],
+    "punteggio": {
+      "0": "Non presente",
+      "1": "Dubbio: Il paziente torna a un solo argomento più volte.",
+      "2": "Lieve: Il paziente si concentra su pochi argomenti, rendendo difficile una conversazione su altri temi.",
+      "3": "Moderata: Il paziente è costretto a rimanere su pochi argomenti. Una conversazione su altri temi è quasi impossibile.",
+      "4": "Grave: Il paziente rimane fisso su un'idea specifica e torna costantemente ad essa, nonostante vengano proposti altri argomenti."
+    }
+  },
+   { 
+    "feature": "Pensiero rallentato",
+    "descrizione": "Dal punto di vista dell'osservatore, il processo di pensiero del paziente sembra rallentato (obiettivo). A causa di questo processo di pensiero lento, la conversazione è languida e torpida.",
+    "esempio": [
+      "Potresti dirmi perché sei venuto in ospedale?",
+      "(pausa) Sto passando un brutto momento... (pausa) Perciò mia sorella mi ha portato qui.",
+      "Hai detto che stai passando un brutto momento. Cosa intendi?",
+      "(pausa) Sono così stanco... (pausa) e mi è difficile alzarmi al mattino.",
+      "Ok, ma quella non era la vera ragione per cui tua sorella ti ha portato qui, giusto?",
+      "No (pausa). Sono sempre di cattivo umore. (pausa)",
+      "Hai perso peso?",
+      "No...(pausa) Non credo."
+    ],
+    "punteggio": {
+      "0": "Non presente",
+      "1": "Dubbio: Un processo di Pensiero Lento potrebbe essere presente, ma non influisce sul flusso della conversazione.",
+      "2": "Lieve: L'esaminatore nota il processo di Pensiero Lento, e il flusso della conversazione è leggermente influenzato.",
+      "3": "Moderata: L'esaminatore nota il processo di Pensiero Lento, e il flusso della conversazione è notevolmente limitato.",
+      "4": "Grave: A causa del pensiero lento del paziente e delle lunghe pause nella conversazione, il flusso della conversazione è limitato a tal punto da rendere l'esplorazione impossibile o possibile solo con grande sforzo."
+    }
+  },
+   {
+    "feature": "Povertà di parola",
+    "descrizione": "Restrizione nella quantità di linguaggio spontaneo, in modo che le risposte alle domande siano brevi, concrete e non elaborate. Informazioni aggiuntive non richieste sono raramente fornite. Le risposte possono essere monosillabiche, e alcune domande possono rimanere del tutto senza risposta. Quando si incontra questo modello di linguaggio, l'intervistatore può trovarsi a sollecitare frequentemente il paziente per incoraggiarne l'elaborazione delle risposte.",
+    "esempio": [
+      "Pensi che ci sia molta corruzione nel governo?",
+      "Sì, sembra esserci.",
+      "Lavoravi prima di venire in ospedale?",
+      "Sì.",
+      "Che tipo di lavori hai fatto in passato?",
+      "Oh, lavori da custode, pittura.",
+      "Che lavoro fai ora?",
+      "Nessuno.",
+      "Quanto sei andato a scuola?",
+      "Undicesima."
+    ],
+    "punteggio": {
+      "0": "Non presente",
+      "1": "Dubbio",
+      "2": "Lieve: Diverse risposte non includono informazioni adeguatamente elaborate.",
+      "3": "Moderata: Le risposte consistono in poche parole. Occasionalmente, le domande possono rimanere senza risposta. Le risposte sono monosillabiche o molto brevi (Sì, No, Forse, Non so, La scorsa settimana).",
+      "4": "Grave: Il paziente è prevalentemente muto."
+    }
+  },
+   {
+    "feature": "Concretismo",
+    "descrizione": "Il concretismo si riferisce alla difficoltà nella comprensione di frasi o espressioni astratte (figurative) (ad esempio, la comprensione/interpretazione di proverbi, metafore, battute). Il paziente si attiene al significato concreto delle parole/affermazioni.",
+    "esempio": [
+      "Potresti spiegare il proverbio 'Gli sparvieri non si cavano gli occhi a vicenda.'",
+      "Beh, gli sparvieri sono uccelli meravigliosi. Se ci sono due sparvieri insieme, non si cavano a vicenda gli occhi."
+    ],
+    "punteggio": {
+      "0": "Non presente",
+      "1": "Dubbio",
+      "2": "Lieve: La comprensione del significato figurato è limitata.",
+      "3": "Moderata: Viene espresso solo il significato concreto.",
+      "4": "Grave: Anche il significato concreto è espresso vagamente o non del tutto."
+    }
+  },
+   {
+    "feature": "Blocco/i",
+      "descrizione":"Percezione e segnalazione di blocco in un processo di pensiero in corso, noto anche come 'perdere il filo del pensiero'. Il blocco è notato soggettivamente dal paziente. Includiamo anche il fenomeno del 'Fading', che si riferisce ad un graduale spegnersi di un pensiero, a differenza di una sua interruzione improvvisa (come nel caso della 'Rottura del Pensiero'). Il Fading può anche verificarsi in maniera fluttuante, ovvero il pensiero diventa inizialmente più debole, poi si riprende per poi svanire di nuovo. A differenza della perdita di pensiero, il Fading può essere valutato solo se il paziente riporta questo fenomeno.",
+      "esempio":[
+         "Non ho più pensieri, è come se qualcosa fosse tagliato fuori.",
+         "A volte i miei pensieri si fermano improvvisamente.",
+         "A volte voglio dire qualcosa e improvvisamente sparisce. A volte riesco a ricordarlo, a volte no.",
+         "Quando guardo la TV, sembra che i miei pensieri lentamente svaniscano senza essere sostituiti da altri pensieri."
+      ],
+      "domanda":"A volte senti che il filo del tuo pensiero si ferma improvvisamente come se fosse bloccato, o che i tuoi pensieri svaniscono gradualmente?",
+      "punteggio":{
+         "0":"Non presente",
+         "1":"Dubbio",
+         "2":"Lieve: Il paziente riferisce diverse occorrenze di blocco, senza sentirsi danneggiato.",
+         "3":"Moderato: Il paziente riferisce blocco occasionale. È possibile che il paziente soffra a causa del blocco e/o che la comunicazione sia leggermente limitata dal suo punto di vista.",
+         "4":"Grave: Il paziente riferisce frequenti blocchi. È necessario che il paziente soffra a causa del blocco e/o che la comunicazione sia compromessa dal suo punto di vista."
+      }
+   },
+   {
+    "feature": "Ruminazione",
+      "descrizione":"Il paziente è costantemente occupato con argomenti prevalentemente spiacevoli. Questi pensieri ruotano attorno agli stessi temi senza arrivare a conclusioni. Per il paziente è difficile interrompere questi processi di pensiero negativi. La ruminazione è vissuta come spiacevole e in alcuni casi anche tormentosa.",
+      "esempio":"Non riesco più a pagare l'affitto. Sono sempre preoccupato di non riuscire a pagare le bollette. Non so davvero come andrà a finire. Non so come pensare ad altro.",
+      "domanda":[
+         "Ti sembra di pensare a certi argomenti più spesso di quanto facevi prima?",
+         "A volte ti sembra di essere spinto a pensare a un argomento particolare, anche se vuoi pensare a qualcos'altro, o vuoi addormentarti?"
+      ],
+      "punteggio":{
+         "0":"Non presente",
+         "1":"Dubbio",
+         "2":"Lieve: La ruminazione si verifica e il paziente è lievemente colpito, ma è ancora in grado di gestire le proprie responsabilità quotidiane.",
+         "3":"Moderato: Il paziente è turbato dalle sue ruminazioni. Le sue responsabilità quotidiane e il suo benessere sono influenzati.",
+         "4":"Grave: Il paziente è notevolmente tormentato dalle sue ruminazioni. Le sue responsabilità quotidiane e il suo benessere sono gravemente influenzati."
+      }
+   },
+   {
+    "feature": "Povertà di pensiero",
+      "descrizione":"Il paziente ha la sensazione che il suo pensiero sia privo di immaginazione e ristretto a pochi temi. Ciò può o meno essere accompagnato da sensazioni spiacevoli.",
+      "esempio":"Non ho più idee. Nulla di nuovo mi viene in mente...",
+      "domanda":[
+         "Ti sembra che nulla di nuovo ti venga in mente?",
+         "Hai la sensazione che il tuo pensiero sia meno immaginativo rispetto al passato?"
+      ],
+      "punteggio":{
+         "0":"Non presente",
+         "1":"Dubbio",
+         "2":"Lieve: Il paziente riferisce episodi di povertà di pensiero, ma non si sente danneggiato.",
+         "3":"Moderato: Il paziente riferisce frequenti episodi di povertà di pensiero. È possibile che il paziente soffra a causa di ciò e/o che la comunicazione sia leggermente limitata dal suo punto di vista.",
+         "4":"Grave: Il paziente riferisce quasi costante povertà di pensiero. È necessario che il paziente soffra a causa di ciò e/o che la comunicazione sia compromessa dal suo punto di vista."
+      }
+   },
+     {
+      "feature":  "Pensiero inibito",
+         "descrizione":"Il processo del pensiero viene vissuto dal paziente come rallentato, frenato o inibito, come se stesse pensando contro una resistenza interna. Il paziente non riesce a superare questa inibizione dei suoi pensieri. Il pensiero inibito può estendersi fino al punto che il paziente ha l'esperienza soggettiva di non riuscire più a pensare affatto.",
+         "esempio":"Non arrivo più da nessuna parte con i miei pensieri. I miei pensieri rallentano e a volte mi sembra di non avere più alcun pensiero... e nemmeno memoria... e non riesco a concentrarmi su nulla.",
+         "domanda":[
+            "Ti sembra che il tuo pensiero sia inibito o rallentato, rispetto al passato?"
+         ],
+         "punteggio":{
+            "0":"Non presente",
+            "1":"Dubbio",
+            "2":"Lieve: Il paziente riferisce episodi di pensiero inibito, ma non si sente danneggiato.",
+            "3":"Moderato: Il paziente riferisce frequenti episodi di pensiero inibito. È possibile che il paziente soffra a causa di questo e/o che la comunicazione sia leggermente compromessa dal suo punto di vista.",
+            "4":"Grave: Il paziente riferisce la presenza di un pensiero inibito quasi costante. È necessario che il paziente soffra a causa di questo e/o che la comunicazione sia compromessa dal suo punto di vista."
+         }
+      },
+      {
+        "feature":"Disfunzione del linguaggio ricettivo",
+         "descrizione":"Il significato delle parole, sequenze di parole o frasi (ad esempio, in conversazioni, film e programmi radiofonici) può essere compreso solo in modo incompleto, con fatica, o non compreso affatto. In alcuni casi, il fenomeno può verificarsi solo dopo un po' di stress mentale. Tuttavia, in altri casi, la velocità di elaborazione verbale potrebbe essere già ridotta fin dall'inizio. Di conseguenza, a causa delle capacità recettive disordinate, il paziente può avere problemi con la comunicazione interpersonale.",
+         "esempio":"A volte non riesco più a seguire le conversazioni, perché sto soffrendo di questa malattia.",
+         "domanda":[
+            "Sei ancora in grado di comprendere le conversazioni con gli altri come facevi in passato?",
+            "Hai la sensazione di riuscire a seguire le conversazioni e i film come facevi prima della malattia?",
+            "Hai mai la sensazione di non riuscire a comprendere il significato di singole parole o frasi?"
+         ],
+         "punteggio":{
+            "0":"Non presente",
+            "1":"Dubbio",
+            "2":"Lieve: Il paziente riferisce una disfunzione del linguaggio recettivo che è lieve e/o è occorsa diverse volte, ma non si sente danneggiato.",
+            "3":"Moderato: Il paziente riferisce una disfunzione moderata e/o occasionale del linguaggio recettivo. È possibile che il paziente soffra a causa di questo e/o che la comunicazione sia leggermente compromessa dal suo punto di vista.",
+            "4":"Grave: Il paziente riferisce una disfunzione marcata del linguaggio recettivo. È necessario che il paziente soffra a causa di questa e/o che la comunicazione sia compromessa dal suo punto di vista."
+         }
+      },
+     {
+      "feature":  "Disfunzione del linguaggio espressivo",
+         "descrizione":"Il paziente nota che è difficile trovare le parole giuste. Mentre il paziente parla, si accorge che la scelta delle parole, la precisione linguistica e la fluidità verbale sono compromesse. Le parole appropriate non sono facilmente accessibili o sono completamente assenti. In alcuni casi, solo formulazioni imprecise e poco chiare vengono in mente. Nelle manifestazioni gravi di questo fenomeno, possono verificarsi fenomeni di crosstalk auto-esperiti, che possono risultare in affermazioni imbarazzanti o inappropriate. Alcuni pazienti possono cercare di compensare il disturbo ripetendo frasi vuote o verbi, o addirittura evitando del tutto la conversazione.",
+         "esempio":"Il mio linguaggio è a un livello molto basico. Le parole e le frasi non sono così precise e appropriate. Non trovo le parole e mi è difficile collegarle correttamente.",
+         "domanda":[
+            "Sei ancora in grado di esprimerti con la stessa abilità e precisione di un tempo?",
+            "Hai la sensazione che il tuo linguaggio non sia più preciso e fluido come prima, che non riesci a trovare le parole giuste, o che ripeti sempre certe parole o frasi?",
+            "Hai mai la sensazione di non riuscire più a esprimerti come desideri?"
+         ],
+         "punteggio":{
+            "0":"Non presente",
+            "1":"Dubbio",
+            "2":"Lieve: Il paziente riferisce una disfunzione lieve del linguaggio espressivo che si è verificata più volte, ma senza sentirsi danneggiato.",
+            "3":"Moderato: Il paziente riferisce disfunzioni moderate e/o occasionali del linguaggio espressivo. È possibile che il paziente soffra a causa di questa condizione e/o che la comunicazione sia leggermente compromessa dal suo punto di vista.",
+            "4":"Grave: Il paziente riferisce una disfunzione marcata del linguaggio espressivo. È necessario che il paziente soffra a causa di questa condizione e/o che la comunicazione sia compromessa dal suo punto di vista."
+         }
+      },
+      {
+        "feature": "Disfunzione iniziativa pensiero e intenzione",
+         "descrizione":"Il paziente sperimenta soggettivamente una mancanza di iniziativa nel pensiero, di 'energia mentale' e di intenzionalità; è consapevole del disturbo. La compromissione nell'iniziare o strutturare il processo di pensiero può portare (a causa della mancanza di un concetto generale) all'incapacità di svolgere attività quotidiane (ad esempio, preparare il caffè).",
+         "esempio":"Ho perso totalmente la forza mentale per pensare.",
+         "domanda":[
+            "A volte ti manca la forza o l'energia per pensare?",
+            "Rispetto al passato, hai la sensazione di aver perso l'iniziativa di pensare e la capacità di partecipare alle conversazioni?"
+         ],
+         "punteggio":{
+            "0":"Non presente",
+            "1":"Dubbio",
+            "2":"Lieve: Il paziente riferisce una disfunzione lieve dell'iniziativa e dell'intenzionalità del pensiero che si è verificata più volte, ma senza sentirsi danneggiato.",
+            "3":"Moderato: Il paziente riferisce disfunzioni moderate e/o occasionali dell'iniziativa e dell'intenzionalità del pensiero. È possibile che il paziente soffra a causa di questo disturbo e/o che le attività quotidiane siano leggermente compromesse dal suo punto di vista.",
+            "4":"Grave: Il paziente riferisce una disfunzione marcata dell'iniziativa e dell'intenzionalità del pensiero. È necessario che il paziente soffra a causa di questo disturbo e/o che le attività quotidiane siano compromesse dal suo punto di vista."
+         }
+      },
+      {
+        "feature": "Interferenza di pensiero",
+         "descrizione":"Pensieri o idee che interferiscono con la linea di pensiero attuale. L'interferenza dei pensieri può essere scatenata o meno da stimoli esterni. I pensieri interferenti sono più o meno neutrali per quanto riguarda il loro peso affettivo.",
+         "esempio":"Devo sempre pensare ad altre cose che mi distraggono.",
+         "domanda":[
+            "Ti distraggono facilmente gli eventi che accadono intorno a te, come ad esempio i rumori?",
+            "Ti sembra a volte di non riuscire a concentrarti sulle conversazioni perché i tuoi pensieri continuano a deviare?"
+         ],
+         "punteggio":{
+            "0":"Non presente",
+            "1":"Dubbio",
+            "2":"Lieve: Il paziente riferisce numerosi episodi di interferenza nei pensieri. Il paziente non deve sentirsi danneggiato a causa di ciò.",
+            "3":"Moderato: Il paziente riferisce interferenze occasionali nei pensieri. È possibile che il paziente soffra a causa di queste interferenze e/o che la comunicazione sia leggermente compromessa dal suo punto di vista.",
+            "4":"Grave: Il paziente riferisce interferenze frequenti nei pensieri. È necessario che il paziente soffra a causa di queste interferenze e/o che la comunicazione sia compromessa dal suo punto di vista."
+         }
+      },
+      {
+        "feature": "Pressione/Impeto di pensieri",
+         "descrizione":"Numerosi pensieri con contenuti vari si affollano nella mente del paziente, alternandosi rapidamente. Il paziente non riesce a controllare né a sopprimere questi pensieri che appaiono e scompaiono.",
+         "esempio":"Non riesco a tenere sotto controllo i miei pensieri. A volte mi sento schiacciato dalla varietà dei miei pensieri. Mi perdo completamente nei dettagli.",
+         "domanda":[
+            "Ti capita mai di sentire che non riesci a indirizzare i tuoi pensieri nella direzione che desideri? Così che più o molti pensieri arrivano nella tua mente contemporaneamente, e che non riesci a bloccare l'apparizione di nuovi pensieri?",
+            "Ti sembra che tante idee arrivino nella tua mente velocemente, una dopo l'altra o anche contemporaneamente, al punto che perdi il controllo dei tuoi pensieri?"
+         ],
+         "punteggio":{
+            "0":"Non presente",
+            "1":"Dubbio",
+            "2":"Lieve: Il paziente riferisce numerosi episodi di pressione/fuga di pensieri. Il paziente non deve sentirsi danneggiato a causa di ciò.",
+            "3":"Moderato: Il paziente riferisce episodi occasionali di pressione/fuga di pensieri. È possibile che il paziente soffra a causa di questa condizione e/o che la comunicazione sia leggermente compromessa dal suo punto di vista.",
+            "4":"Grave: Il paziente riferisce episodi frequenti di pressione/fuga di pensieri. È necessario che il paziente soffra a causa di questa condizione e/o che la comunicazione sia compromessa dal suo punto di vista."
+         }
+      }
+    ]
